@@ -5,54 +5,114 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Vesper Cafe — 夕暮れのスペシャルティコーヒー。架空のカフェ Web サイトです。">
   <title>Vesper Cafe | 夕暮れのスペシャルティコーヒー</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="page">
-    <header class="site-header">
-      <div class="brand">
-        <p class="brand-eyebrow">Evening Specialty Coffee</p>
-        <h1>Vesper Cafe</h1>
-        <p class="tagline">夕暮れのスペシャルティコーヒー</p>
-      </div>
-      <p class="hours">OPEN <span>16:00 – 22:00</span></p>
-    </header>
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient__orb ambient__orb--1"></div>
+    <div class="ambient__orb ambient__orb--2"></div>
+    <div class="ambient__orb ambient__orb--3"></div>
+  </div>
 
+  <header class="site-nav">
+    <a class="site-nav__logo" href="#">Vesper</a>
+    <nav class="site-nav__links" aria-label="メインナビゲーション">
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#access">Access</a>
+    </nav>
+    <p class="site-nav__hours">OPEN <span>16:00–22:00</span></p>
+  </header>
+
+  <main>
     <section class="hero" aria-labelledby="hero-heading">
-      <p class="hero-eyebrow">Welcome</p>
-      <h2 id="hero-heading">一日の終わりに、<br>ちょっと特別な一杯を。</h2>
-      <p class="hero-desc">
-        街灯がともりはじめるころ、焙煎の香りが店内に広がります。
-        今日のおすすめは下のメニューからどうぞ。
-      </p>
-      <a class="hero-cta" href="#menu">メニューを見る</a>
+      <div class="hero__content reveal">
+        <p class="eyebrow">Evening Specialty Coffee</p>
+        <h1 id="hero-heading">Vesper Cafe</h1>
+        <p class="hero__lead">一日の終わりに、<br>ちょっと特別な一杯を。</p>
+        <p class="hero__desc">
+          街灯がともりはじめるころ、焙煎の香りが店内に広がります。
+          深煎りのコーヒーと手作りスイーツで、夕暮れの余白を満たす。
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#menu">メニューを見る</a>
+          <a class="btn btn--ghost" href="#access">店舗情報</a>
+        </div>
+      </div>
+      <div class="hero__visual reveal reveal--delay" aria-hidden="true">
+        <div class="hero__frame">
+          <div class="hero__glow"></div>
+          <div class="hero__cup">
+            <div class="hero__steam hero__steam--1"></div>
+            <div class="hero__steam hero__steam--2"></div>
+            <div class="hero__steam hero__steam--3"></div>
+          </div>
+          <p class="hero__caption">Today's Roast · Vesper Blend</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="店舗ハイライト">
+      <ul class="stats__list">
+        <li class="stats__item reveal">
+          <span class="stats__value">16:00</span>
+          <span class="stats__label">夕暮れオープン</span>
+        </li>
+        <li class="stats__item reveal reveal--delay">
+          <span class="stats__value">5</span>
+          <span class="stats__label">Evening Menu</span>
+        </li>
+        <li class="stats__item reveal reveal--delay-2">
+          <span class="stats__value">100%</span>
+          <span class="stats__label">Hand Crafted</span>
+        </li>
+      </ul>
     </section>
 
     <section class="menu" id="menu" aria-labelledby="menu-heading">
-      <div class="menu-header">
-        <div>
-          <p class="menu-eyebrow">Today's Selection</p>
+      <div class="section-head reveal">
+        <p class="eyebrow">Today's Selection</p>
+        <div class="section-head__row">
           <h2 id="menu-heading">Evening Menu</h2>
+          <p class="menu-count" id="menu-count" aria-live="polite"></p>
         </div>
-        <p class="menu-count" id="menu-count" aria-live="polite"></p>
       </div>
       <div class="menu-grid" id="menu-grid"></div>
     </section>
 
-    <section class="info" aria-labelledby="info-heading">
-      <div class="info-grid">
-        <div class="info-card">
-          <p class="info-eyebrow">About</p>
-          <h2 id="info-heading">Vesper について</h2>
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="about__grid">
+        <div class="about__content reveal">
+          <p class="eyebrow">Our Story</p>
+          <h2 id="about-heading">夕暮れに寄り添う、<br>小さな焙煎室。</h2>
           <p>
-            夕暮れ時にだけ開く、小さなスペシャルティコーヒーの店。
-            深煎りブレンドと季節のスイーツで、仕事帰りのひと息を。
+            Vesper は、仕事帰りの方がふらりと立ち寄れる「一日の終わりのサロン」を目指しています。
+            豆は週替わりで仕入れ、バリスタがその日の気温と湿度に合わせて抽出します。
           </p>
+          <ul class="about__features">
+            <li>週替わりシングルオリジン</li>
+            <li>店内焙煎 · 小ロット</li>
+            <li>季節のスイーツ</li>
+          </ul>
         </div>
-        <div class="info-card">
-          <p class="info-eyebrow">Access</p>
-          <h2>店舗情報</h2>
-          <dl class="info-list">
+        <div class="about__panel reveal reveal--delay" aria-hidden="true">
+          <div class="about__panel-inner">
+            <span class="about__panel-tag">Est. 2024</span>
+            <p>夕凪 · Tokyo</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="access" id="access" aria-labelledby="access-heading">
+      <div class="access__card reveal">
+        <div class="access__info">
+          <p class="eyebrow">Access</p>
+          <h2 id="access-heading">店舗情報</h2>
+          <dl class="access__list">
             <div>
               <dt>住所</dt>
               <dd>東京都架空区夕凪 2-14-7</dd>
@@ -65,15 +125,24 @@
               <dt>定休日</dt>
               <dd>月曜日</dd>
             </div>
+            <div>
+              <dt>営業時間</dt>
+              <dd>16:00 – 22:00（L.O. 21:30）</dd>
+            </div>
           </dl>
+        </div>
+        <div class="access__map" aria-hidden="true">
+          <div class="access__pin"></div>
+          <p>Yūnagi, Tokyo</p>
         </div>
       </div>
     </section>
+  </main>
 
-    <footer class="site-footer">
-      <p>Vesper Cafe — 架空のカフェです。実在の店舗とは無関係です。</p>
-    </footer>
-  </div>
+  <footer class="site-footer">
+    <p class="site-footer__brand">Vesper Cafe</p>
+    <p class="site-footer__note">架空のカフェです。実在の店舗とは無関係です。</p>
+  </footer>
 
   <script src="js/storage.js"></script>
   <script src="js/app.js"></script>

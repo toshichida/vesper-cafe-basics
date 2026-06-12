@@ -1,9 +1,39 @@
 {
   "menu": [
-    { "id": 1, "name": "Vesper Blend", "price": 580, "category": "coffee" },
-    { "id": 2, "name": "Honey Latte", "price": 650, "category": "coffee" },
-    { "id": 3, "name": "Night Cold Brew", "price": 620, "category": "coffee" },
-    { "id": 4, "name": "Twilight Scone", "price": 420, "category": "food" },
-    { "id": 5, "name": "Cinnamon Cookie", "price": 380, "category": "food" }
+    {
+      "id": 1,
+      "name": "Vesper Blend",
+      "price": 580,
+      "category": "coffee",
+      "description": "ダークチョコとスモーキーな余韻。夕暮れ専用ブレンド。"
+    },
+    {
+      "id": 2,
+      "name": "Honey Latte",
+      "price": 650,
+      "category": "coffee",
+      "description": "はちみつとエスプレッソのとろけるハーモニー。"
+    },
+    {
+      "id": 3,
+      "name": "Night Cold Brew",
+      "price": 620,
+      "category": "coffee",
+      "description": "16時間低温抽出。すっきりとした深いコク。"
+    },
+    {
+      "id": 4,
+      "name": "Twilight Scone",
+      "price": 420,
+      "category": "food",
+      "description": "バター香る手作りスコーン。季節のジャム添え。"
+    },
+    {
+      "id": 5,
+      "name": "Cinnamon Cookie",
+      "price": 380,
+      "category": "food",
+      "description": "シナモンと黒糖のサクサククッキー。"
+    }
   ]
 }
