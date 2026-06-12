@@ -1,0 +1,7 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/", "destination": "/vesper-cafe/index.html" },
+    { "source": "/(.*)", "destination": "/vesper-cafe/$1" }
+  ]
+}

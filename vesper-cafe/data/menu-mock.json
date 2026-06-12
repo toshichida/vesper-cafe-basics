@@ -2,6 +2,8 @@
   "menu": [
     { "id": 1, "name": "Vesper Blend", "price": 580, "category": "coffee" },
     { "id": 2, "name": "Honey Latte", "price": 650, "category": "coffee" },
-    { "id": 3, "name": "Twilight Scone", "price": 420, "category": "food" }
+    { "id": 3, "name": "Night Cold Brew", "price": 620, "category": "coffee" },
+    { "id": 4, "name": "Twilight Scone", "price": 420, "category": "food" },
+    { "id": 5, "name": "Cinnamon Cookie", "price": 380, "category": "food" }
   ]
 }

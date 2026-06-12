@@ -7,10 +7,6 @@ function formatPrice(price) {
   return `¥${price.toLocaleString('ja-JP')}`;
 }
 
-function favoriteLabel(isFavorite) {
-  return isFavorite ? '♥ お気に入り済み' : '♡ お気に入りに追加';
-}
-
 function createMenuCard(item, favorites) {
   const card = document.createElement('article');
   card.className = 'menu-card';
@@ -32,7 +28,7 @@ function createMenuCard(item, favorites) {
         class="favorite-btn${isFavorite ? ' is-active' : ''}"
         aria-label="${isFavorite ? 'お気に入りから外す' : 'お気に入りに追加'}"
         aria-pressed="${isFavorite}"
-      >${favoriteLabel(isFavorite)}</button>
+      >${isFavorite ? '♥' : '♡'}</button>
     </div>
   `;
 
@@ -40,7 +36,7 @@ function createMenuCard(item, favorites) {
   favoriteBtn.addEventListener('click', () => {
     const active = toggleFavorite(item.id);
     favoriteBtn.classList.toggle('is-active', active);
-    favoriteBtn.textContent = favoriteLabel(active);
+    favoriteBtn.textContent = active ? '♥' : '♡';
     favoriteBtn.setAttribute('aria-pressed', String(active));
     favoriteBtn.setAttribute(
       'aria-label',
